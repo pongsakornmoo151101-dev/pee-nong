@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MooSweet</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<body>
+
+<header>
+    <nav class="navbar">
+    <h1>MooSweet</h1>
+    <div class="menu">
+    <a href="index.html">หน้าแรก</a>
+    <a href="detail.html">รายละเอียดขนม</a>
+    <a href="about.html">เกี่ยวกับร้าน</a>
+    <a href="contact.html">ติดต่อ</a>
+    <a href="employees.html">รายละเอียดพนักงาน</a>
+    <button onclick="showCart()">🛒 ตะกร้า (<span id="cartCount">0</span>)</button>
+    </div>
+    </nav>
+</header>
+
+<section class="hero">
+<div>
+<p class="tag">ขนมโฮมเมด ทำสดใหม่ทุกวัน</p>
+<h2>ความสุขเล็ก ๆ<br>ในทุกคำที่ได้ชิม 💕</h2>
+<p>คุกกี้โฮมเมด ราคาเพียง 35 บาท</p>
+<a class="main-btn" href="#products">ดูเมนูขนม</a>
+</div>
+<div class="hero-cake">🍞</div>
+</section>
+
+<section id="products" class="section">
+<h2>🍞 เมนูขนมของร้าน</h2>
+<p class="section-text">เมนูแนะนำของร้าน มีเพียง 1 เมนู</p>
+<div class="product-grid">
+<div class="product-card">
+<div class="product-img">🍞</div>
+<h3>ขนมปังเคลือบคาราเมล</h3>
+<p>หนุบหนับ หอมเนยและคาราเมล</p>
+<strong>฿35</strong>
+<div class="card-buttons">
+<a class="detail-btn" href="detail.html">ดูรายละเอียด</a>
+<button onclick="addToCart('ขนมปังเคลือบคาราเมล',35)">เพิ่มลงตะกร้า</button>
+</div>
+</div>
+</div>
+</section>
+   <footer><p>© 2026  MooSweet. All rights reserved.</p></footer>
+</section>
+<div id="cartBox" class="cart-box">
+<button class="close" onclick="closeCart()">✕</button>
+<h2>🛒 ตะกร้าของฉัน</h2>
+<div id="cartItems">ยังไม่มีสินค้า</div>
+<h3>รวม: ฿<span id="cartTotal">0</span></h3>
+<button onclick="checkout()">ยืนยันการสั่งซื้อ</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+<div class="stars-container"></div>
+<div class="bread-icon">🍞</div>

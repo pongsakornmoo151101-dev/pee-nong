@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<nav class="navbar">
+<h1>MooSweet</h1>
+<div class="menu">
+<a href="index.html">หน้าแรก</a>
+<a href="detail.html">รายละเอียดขนม</a>
+<a href="about.html">เกี่ยวกับร้าน</a>
+<a href="contact.html">ติดต่อ</a>
+<a href="employees.html">รายละเอียดพนักงาน</a>
+<button onclick="showCart()">🛒 ตะกร้า (<span id="cartCount">0</span>)</button>
+</div>
+</nav>
+<body>
+   <section id="contact" class="contact section">
+<h2>📞 ติดต่อร้าน</h2>
+ แจ้งรายละเอียดการสั่งซื้อขนม 
+    หรือสอบถามข้อมูลเพิ่มเติมได้ที่ช่องทางด้านล่างนี้
+
+<form onsubmit="submitOrder(event)">
+<input id="customerName" type="text" placeholder="ชื่อของคุณ" required>
+<input id="phone" type="tel" placeholder="เบอร์โทรศัพท์" required>
+<textarea id="message" placeholder="รายละเอียดที่ต้องการสั่ง"></textarea>
+<button type="submit">ส่งข้อมูล</button>
+</form>
+</section>
+
+
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</section>
+   <footer><p>© 2026  MooSweet. All rights reserved.</p></footer>
+</section>
+</html>
