@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -265,33 +266,120 @@
 
         <div id="cartItems">
             ยังไม่มีสินค้า
+=======
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MooSweet - รายละเอียดพนักงาน</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <h1>MooSweet</h1>
+    <div class="menu">
+      <a href="index.html">หน้าแรก</a>
+      <a href="detail.html">รายละเอียดขนม</a>
+      <a href="about.html">เกี่ยวกับร้าน</a>
+      <a href="contact.html">ติดต่อ</a>
+      <a href="employees.html">รายละเอียดพนักงาน</a>
+      <button onclick="showCart()">🛒 ตะกร้า (<span id="cartCount">0</span>)</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="employees-section">
+    <h2>🍞 รายละเอียดพนักงาน</h2>
+    <p class="employees-intro">สมาชิกและผู้ดูแลร้าน MooSweet</p>
+
+    <div class="employees-grid">
+
+      <!-- คนที่ 1 -->
+      <div class="employee-card">
+        <div class="employee-info">
+          <div class="employee-icon">
+            <img src="member1.jpg.jpg" alt="Pongsakorn" onerror="this.replaceWith('👤')">
+          </div>
+          <h3>พงศกร กรอบเพ็ชร</h3>
+          <div class="employee-line"></div>
+          <p><strong>ตำแหน่ง:</strong> เจ้าของร้าน</p>
+          <p><strong>หน้าที่:</strong> วางแผนงาน ควบคุมงาน และดูแลร้าน</p>
+          <p>🐶 GitHub ของฉัน</p>
+          <a href="https://pongsakornmoo151101-dev.github.io/Resume-by-MOOWAN/" target="_blank">Resume</a>
+>>>>>>> 1538239d002356f4fdceaca61f4be21234e1ffcc
         </div>
+      </div>
 
-        <h3>
-            รวม: ฿
-            <span id="cartTotal">
-                0
-            </span>
-        </h3>
+      <!-- คนที่ 2 -->
+      <div class="employee-card">
+        <div class="employee-info">
+          <div class="employee-icon">
+            <img src="member2.jpg" alt="SANHANAT" onerror="this.replaceWith('👤')">
+          </div>
+          <h3>สัณหณัฐ หมินแดง</h3>
+          <div class="employee-line"></div>
+          <p><strong>ตำแหน่ง:</strong> สมาชิก</p>
+          <p><strong>หน้าที่:</strong> ออกแบบและจัดทำสื่อนำเสนอ</p>
+          <p>🐶 GitHub ของฉัน</p>
+          <a href="https://euro551.github.io/resume/#skills" target="_blank">Resume</a>
+        </div>
+      </div>
 
-        <button onclick="checkout()">
-            ยืนยันการสั่งซื้อ
-        </button>
+      <!-- คนที่ 3 -->
+      <div class="employee-card">
+        <div class="employee-info">
+          <div class="employee-icon">
+            <img src="member3.jpg" alt="Thanakorn" onerror="this.replaceWith('👤')">
+          </div>
+          <h3>ธนากร เรืองพลตรี</h3>
+          <div class="employee-line"></div>
+          <p><strong>ตำแหน่ง:</strong> สมาชิก</p>
+          <p><strong>หน้าที่:</strong> เขียนโค้ดและพัฒนาเว็บไซต์</p>
+          <p>🐶 GitHub ของฉัน</p>
+          <a href="https://resume-6840035581.onrender.com/" target="_blank">Resume</a>
+        </div>
+      </div>
+
+      <!-- คนที่ 4 -->
+      <div class="employee-card">
+        <div class="employee-info">
+          <div class="employee-icon">👤</div>
+          <h3>สมาชิกคนที่ 4</h3>
+          <div class="employee-line"></div>
+          <p><strong>ตำแหน่ง:</strong> สมาชิก</p>
+          <p><strong>หน้าที่:</strong> วิเคราะห์ข้อมูลและจัดทำรายงาน</p>
+        </div>
+      </div>
+
+      <!-- คนที่ 5 -->
+      <div class="employee-card">
+        <div class="employee-info">
+          <div class="employee-icon">👤</div>
+          <h3>สมาชิกคนที่ 5</h3>
+          <div class="employee-line"></div>
+          <p><strong>ตำแหน่ง:</strong> สมาชิก</p>
+          <p><strong>หน้าที่:</strong> นำเสนอผลงานและดูแลสไลด์</p>
+        </div>
+      </div>
 
     </div>
+  </section>
+</main>
 
+<footer><p>© 2026 MooSweet. All rights reserved.</p></footer>
 
-    <!-- JavaScript -->
+<div id="cartBox" class="cart-box">
+  <button class="close" onclick="closeCart()">✕</button>
+  <h2>🛒 ตะกร้าของฉัน</h2>
+  <div id="cartItems">ยังไม่มีสินค้า</div>
+  <h3>รวม: ฿<span id="cartTotal">0</span></h3>
+  <button onclick="checkout()">ยืนยันการสั่งซื้อ</button>
+</div>
 
-    <script src="script.js"></script>
+<div class="stars-container"></div>
+<div class="bread-icon">🍞</div>
 
-
-</section>
-   <footer><p>© 2026  MooSweet. All rights reserved.</p></footer>
-</section>
-
-
-
+<script src="script.js"></script>
 </body>
-
 </html>

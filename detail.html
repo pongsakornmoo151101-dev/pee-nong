@@ -1,63 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <nav class="navbar">
-<h1>MooSweet</h1>
-<div class="menu">
-<a href="index.html">หน้าแรก</a>
-<a href="detail.html">รายละเอียดขนม</a>
-<a href="about.html">เกี่ยวกับร้าน</a>
-<a href="contact.html">ติดต่อ</a>
-<a href="employees.html">รายละเอียดพนักงาน</a>
-<button onclick="showCart()">🛒 ตะกร้า (<span id="cartCount">0</span>)</button>
-</div>
-</nav>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MooSweet - รายละเอียดขนม</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <h1>MooSweet</h1>
+    <div class="menu">
+      <a href="index.html">หน้าแรก</a>
+      <a href="detail.html">รายละเอียดขนม</a>
+      <a href="about.html">เกี่ยวกับร้าน</a>
+      <a href="contact.html">ติดต่อ</a>
+      <a href="employees.html">รายละเอียดพนักงาน</a>
+      <button onclick="showCart()">🛒 ตะกร้า (<span id="cartCount">0</span>)</button>
+    </div>
+  </nav>
 </header>
 
-<section class="detail-page">
-<div class="detail-image">🍞</div>
-<div class="detail-info">
-<p class="tag">เมนูแนะนำของร้าน</p>
-<h2>ขนมปัง
-    เคลือบคาราเมล</h2>
-<div class="price">฿35</div>
-<p>ขนมปัง หอมเนยและคาราเมล เนื้อหนึบ เหมาะสำหรับรับประทานคู่กับกาแฟ นม หรือชา</p>
-<h3>รายละเอียดสินค้า</h3>
-<ul>
-<li>ทำสดใหม่จากทางร้าน</li>
-<li>รสชาติหวานอร่อย</li>
-<li>เหมาะสำหรับรับประทานเล่น</li>
-<li>ราคา 35 บาท</li>
-</ul>
-<div class="detail-buttons">
-<button onclick="addToCart('ขนมปังเคลือบคาราเมล',35)">🛒 เพิ่มลงตะกร้า</button>
-<a href="index.html">← กลับหน้าแรก</a>
-</div>
-</div>
+<section class="detail-page" id="detailPage">
 
 </section>
-   <footer><p>© 2026  MooSweet. All rights reserved.</p></footer>
-</section>
 
+<footer><p>© 2026 MooSweet. All rights reserved.</p></footer>
 
-
-<script src="script.js"></script>
-</body>
-</html>
-<div class="bread-icon">🍞</div>
 <div id="cartBox" class="cart-box">
-<button class="close" onclick="closeCart()">✕</button>
-<h2>🛒 ตะกร้าของฉัน</h2>
-<div id="cartItems">ยังไม่มีสินค้า</div>
-<h3>รวม: ฿<span id="cartTotal">0</span></h3>
-<button onclick="checkout()">ยืนยันการสั่งซื้อ</button>
+  <button class="close" onclick="closeCart()">✕</button>
+  <h2>🛒 ตะกร้าของฉัน</h2>
+  <div id="cartItems">ยังไม่มีสินค้า</div>
+  <h3>รวม: ฿<span id="cartTotal">0</span></h3>
+  <button onclick="checkout()">ยืนยันการสั่งซื้อ</button>
 </div>
-<script src="script.js"></script>
-</body>
-</html>
+
 <div class="stars-container"></div>
 <div class="bread-icon">🍞</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
