@@ -1,39 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MooSweet - เกี่ยวกับร้าน</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<nav class="navbar">
-<h1>MooSweet</h1>
-<div class="menu">
-<a href="index.html">หน้าแรก</a>
-<a href="detail.html">รายละเอียดขนม</a>
-<a href="about.html">เกี่ยวกับร้าน</a>
-<a href="contact.html">ติดต่อ</a>
-<a href="employees.html">รายละเอียดพนักงาน</a>
-<button onclick="showCart()">🛒 ตะกร้า (<span id="cartCount">0</span>)</button>
-</div>
-</nav>
 <body>
 
+<header>
+  <nav class="navbar">
+    <h1>MooSweet</h1>
+    <div class="menu">
+      <a href="index.html">หน้าแรก</a>
+      <a href="detail.html">รายละเอียดขนม</a>
+      <a href="about.html">เกี่ยวกับร้าน</a>
+      <a href="contact.html">ติดต่อ</a>
+      <a href="employees.html">รายละเอียดพนักงาน</a>
+      <button onclick="showCart()">🛒 ตะกร้า (<span id="cartCount">0</span>)</button>
+    </div>
+  </nav>
+</header>
 
-   <section id="about" class="about section">
-<h2>💗 เกี่ยวกับร้าน</h2>
-<p>MooSweet เป็นร้านขนมเล็ก ๆ ที่ทำขนมโฮมเมด เน้นความสดใหม่ ราคาเข้าถึงง่าย และตั้งใจทำทุกชิ้น</p>
+<section id="about" class="about section">
+  <h2>💗 เกี่ยวกับร้าน</h2>
+  <p><strong>MooSweet</strong> คือพื้นที่เล็ก ๆ ที่เต็มไปด้วยความรักและความตั้งใจในการทำขนมโฮมเมด 
+  เราเชื่อว่าขนมที่ดีไม่ใช่เพียงแค่รสชาติอร่อย แต่ต้องมอบความสุขและความอบอุ่นให้กับทุกคนที่ได้ลิ้มลอง</p>
+
+  <p>ทุกชิ้นถูกทำขึ้นอย่างพิถีพิถัน <span class="highlight">สดใหม่จากเตาในทุกวัน</span> 
+  เพื่อให้คุณมั่นใจได้ว่าทุกคำที่รับประทานนั้นเต็มไปด้วยคุณภาพและความใส่ใจ</p>
+
+  <p>เราอยากให้ขนมของ MooSweet เป็นมากกว่าของหวาน แต่เป็นสิ่งที่เข้าถึงง่าย 
+  <strong>ราคาเป็นมิตร</strong> และสามารถเติมเต็มช่วงเวลาพิเศษของคุณ 
+  ไม่ว่าจะเป็นการแบ่งปันกับครอบครัว เพื่อน หรือการให้รางวัลเล็ก ๆ แก่ตัวเอง 
+  ทุกชิ้นคือการสื่อสารความตั้งใจและความสุขที่เรามอบให้คุณ 🍪</p>
+
+  
 </section>
 
-</section>
-   <footer><p>© 2026  MooSweet. All rights reserved.</p></footer>
-</section>
 
+<footer><p>© 2026 MooSweet. All rights reserved.</p></footer>
 
+<div id="cartBox" class="cart-box">
+  <button class="close" onclick="closeCart()">✕</button>
+  <h2>🛒 ตะกร้าของฉัน</h2>
+  <div id="cartItems">ยังไม่มีสินค้า</div>
+  <h3>รวม: ฿<span id="cartTotal">0</span></h3>
+  <button onclick="checkout()">ยืนยันการสั่งซื้อ</button>
 </div>
-</div>
-</div>
 
+<div class="stars-container"></div>
+<div class="bread-icon">🍞</div>
 
+<script src="script.js"></script>
 </body>
 </html>
