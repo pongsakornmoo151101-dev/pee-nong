@@ -1,56 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MooSweet - ติดต่อ</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<nav class="navbar">
-<h1>MooSweet</h1>
-<div class="menu">
-<a href="index.html">หน้าแรก</a>
-<a href="detail.html">รายละเอียดขนม</a>
-<a href="about.html">เกี่ยวกับร้าน</a>
-<a href="contact.html">ติดต่อ</a>
-<a href="employees.html">รายละเอียดพนักงาน</a>
-<button onclick="showCart()">🛒 ตะกร้า (<span id="cartCount">0</span>)</button>
-</div>
-</nav>
 <body>
-   <section id="contact" class="contact section">
-<h2>📞 ติดต่อร้าน</h2>
- แจ้งรายละเอียดการสั่งซื้อขนม 
-    หรือสอบถามข้อมูลเพิ่มเติมได้ที่ช่องทางด้านล่างนี้
 
-<form onsubmit="submitOrder(event)">
-<input id="customerName" type="text" placeholder="ชื่อของคุณ" required>
-<input id="phone" type="tel" placeholder="เบอร์โทรศัพท์" required>
-<textarea id="message" placeholder="รายละเอียดที่ต้องการสั่ง"></textarea>
-<button type="submit">ส่งข้อมูล</button>
-</form>
+<header>
+  <nav class="navbar">
+    <h1>MooSweet</h1>
+    <div class="menu">
+      <a href="index.html">หน้าแรก</a>
+      <a href="detail.html">รายละเอียดขนม</a>
+      <a href="about.html">เกี่ยวกับร้าน</a>
+      <a href="contact.html">ติดต่อ</a>
+      <a href="employees.html">รายละเอียดพนักงาน</a>
+      <button onclick="showCart()">🛒 ตะกร้า (<span id="cartCount">0</span>)</button>
+    </div>
+  </nav>
+</header>
+
+<section id="contact" class="contact section">
+  <h2>📞 ติดต่อร้าน</h2>
+  <p class="section-text">แจ้งรายละเอียดการสั่งซื้อขนม หรือสอบถามข้อมูลเพิ่มเติมได้ที่ช่องทางด้านล่างนี้</p>
+
+  <div class="contact-links">
+    <a href="" target="" class="contact-link contact-link--facebook">
+      <img src="Facebook.jpg" alt="Profile Icon">
+      <span class="contact-link-text">
+        <strong>Facebook</strong>
+        <span>MooSweet</span>
+      </span>
+    </a>
+    <a href="" target="" class="contact-link contact-link--line">
+      <img src="Line.jpg" alt="Profile Icon">
+      <span class="contact-link-text">
+        <strong>LINE</strong>
+        <span>@moosweet</span>
+      </span>
+    </a>
+    <a href="" class="contact-link contact-link--gmail">
+      <img src="Gmail.jpg" alt="Profile Icon">
+      <span class="contact-link-text">
+        <strong>Gmail</strong>
+        <span>moosweet.bakery@gmail.com</span>
+      </span>
+    </a>
+  </div>
+
+  <form onsubmit="submitOrder(event)">
+    <input id="customerName" type="text" placeholder="ชื่อของคุณ" required>
+    <input id="phone" type="tel" placeholder="เบอร์โทรศัพท์" required>
+    <textarea id="message" placeholder="รายละเอียดที่ต้องการสั่ง"></textarea>
+    <button type="submit">ส่งข้อมูล</button>
+  </form>
 </section>
 
+<footer><p>© 2026 MooSweet. All rights reserved.</p></footer>
 
-
-
+<div id="cartBox" class="cart-box">
+  <button class="close" onclick="closeCart()">✕</button>
+  <h2>🛒 ตะกร้าของฉัน</h2>
+  <div id="cartItems">ยังไม่มีสินค้า</div>
+  <h3>รวม: ฿<span id="cartTotal">0</span></h3>
+  <button onclick="checkout()">ยืนยันการสั่งซื้อ</button>
 </div>
-</div>
-</div>
 
+<div class="stars-container"></div>
+<div class="bread-icon">🍞</div>
 
-
-
-
-
-
-
-
-
+<script src="script.js"></script>
 </body>
-
-
-</section>
-   <footer><p>© 2026  MooSweet. All rights reserved.</p></footer>
-</section>
 </html>
